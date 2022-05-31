@@ -56,7 +56,7 @@ router.post('/', withAuth, async (req, res) => {
 
   router.get('/:id', (req, res) => {
     try {
-        const blogData = await Blog.findByPk(req.params.id);
+        const blogData = Blog.findByPk(req.params.id);
     
         res.status(200).json(blogData);
     
