@@ -23,12 +23,12 @@
 
         {{#if logged_in}}
         <a href="/">Home</a> |
-        <a href="/TechBlog/views/dashboard.handlebars">Dashboard</a> |
-        <button class="no-button" id="logout">Logout</button>
+        <a href="/dashboard">Dashboard</a> |
+        <a class="link" href="/" id="logout">Logout</a>
         {{else}}
-        <a href="/">Home</a> |
-        <a href="/TechBlog/views/dashboard.handlebars">Dashboard</a> |
-        <a href="/TechBlog/views/login.handlebars">Login</a>
+        <a href="/homepage">Home</a> |
+        <a href="/dashboard">Dashboard</a> |
+        <a href="/login">Login</a>
         {{/if}}
       </nav>
     </header>
@@ -43,9 +43,9 @@
   </div>
 
 
-  {{#if logged_in}}
-  <script src="/TechBlog/public/js/login.js"></script>
-  {{/if}}
+  {{!-- {{#if logged_in}}
+ 
+  {{/if}} --}}
 </body>
 
 </html>
